@@ -11,23 +11,17 @@
       <div class="header">
         <div>
           <div style="font-weight:900; opacity:.95;">Outbound Lead</div>
-          <div id="status" style="opacity:.85; font-size:13px;">Initializing…</div>
+          <div id="status" style="opacity:.85; font-size:13px;">Loading…</div>
         </div>
         <div class="logo" id="logoContainer">
-          <!-- Replace /telkom-logo.png with your hosted logo or Content Management URL -->
           <img id="telkomLogo" src="telkom-logo.png" alt="Telkom" style="height:34px;width:auto;display:block;">
         </div>
-      </div>
-
-      <div class="controls" id="controls" style="margin-bottom:12px;display:none;">
-        <button id="logoutBtn">Sign out</button>
       </div>
 
       <div class="grid" id="grid"></div>
     </div>
 
-    <script src="pkce.js"></script>
-    <script src="oauth.js"></script>
+    <!-- No OAuth scripts needed when using Vercel client-credentials backend -->
     <script src="app.js"></script>
   </body>
 </html>
